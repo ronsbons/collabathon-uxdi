@@ -17,7 +17,7 @@
 
   <!-- Begin Mailchimp Signup Form -->
   <div id="mc_embed_signup">
-    <form action="https://gmail.us20.list-manage.com/subscribe/post?u=978d82adcc8eb44c298ff9595&amp;id=3510d9c78f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form action="https://gmail.us20.list-manage.com/subscribe/post?u=978d82adcc8eb44c298ff9595&amp;id=3510d9c78f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
       <div id="mc_embed_signup_scroll">
         <h2>Subscribe to our mailing list</h2>
         <div class="indicates-required">
@@ -33,13 +33,13 @@
         <!-- First Name input -->
         <div class="mc-field-group">
           <label for="mce-FNAME">First Name  <span class="asterisk">*</span></label>
-          <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+          <input pattern=“^[^\w]+” required minlength="2"  type="text" value="" name="FNAME" class="required" id="mce-FNAME">
         </div>
 
         <!-- Last Name input -->
         <div class="mc-field-group">
           <label for="mce-LNAME">Last Name  <span class="asterisk">*</span></label>
-          <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+          <input pattern="[^\w]+" required minlength="2" type="text" value="" name="LNAME" class="required" id="mce-LNAME">
         </div>
 
         <div id="mce-responses" class="clear">
