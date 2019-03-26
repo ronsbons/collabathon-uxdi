@@ -30,7 +30,7 @@ app.use((request, respond, next) => {
   // routes HTTP GET request to path with callback function that will send the response 'Hello World!'
 app.get('/', (request, response) => {
   // serves index.html on the root route, so when the user first gets to the app/page
-  response.sendFile('views/index.html', { root : __dirname});
+  response.sendFile('/index2.html', { root : __dirname});
 });
 
 
