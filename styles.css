@@ -11,11 +11,11 @@ body {
 /* Header and Nav styles */
 header {
   background-image:  
-  linear-gradient(
-    rgba(120, 88, 154, 0.45), 
-    rgba(120, 88, 154, 0.45)
-  ),
-  url("images/earicles2.jpg"); /* The image used */
+    linear-gradient(
+      rgba(120, 88, 154, 0.45), 
+      rgba(120, 88, 154, 0.45)
+    ),
+    url("images/earicles2.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -55,7 +55,7 @@ header {
 
 h1 {
   /* bottom, left, right, top refer to parent element (header) which has position relative corresponding with this element's absolute position */
-  bottom: 3%;
+  bottom: 6%;
   color: white;
   font-size: 16px;
   font-weight: 300;
@@ -81,25 +81,28 @@ h1 {
 /* Main Section styles */
 .columns {
   margin: 0px;
-  padding: 3em;
+  padding: 4em;
 }
 
 .column {
-  padding: 2em;
+  padding: 2.7em;
 }
 
 .is-three-fifths {
   border-right: 1px solid gray;
-  font-size: 1.1em;
-  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  padding-top: 1.2em;
 }
 
 .inline-company {
-  color: purple;
-  font-size: 1.5em;
+  color: #78589A;
+  font-size: 26px;
+  padding-right: .2em;
 }
 
 .is-two-fifths {
+  padding-top: 1.7em;
   text-align: center;
 }
 
@@ -183,7 +186,12 @@ input {
 @media only screen and (max-width: 375px) {
   /* Header and Nav styles */
   header {
-    background-image: url("images/earicles-mobile.jpg"); /* The image used */
+    background-image: 
+      linear-gradient(
+        rgba(120, 88, 154, 0.45), 
+        rgba(120, 88, 154, 0.45)
+      ),
+      url("images/earicles-mobile.jpg"); /* The image used */
     height: 30vh;
   }
 
@@ -232,11 +240,13 @@ input {
     border-right: none;
     font-size: 1em;
     font-weight: normal;
+    padding-bottom: 25px;
   }
 
   .inline-company {
-    color: #4a4a4a;
+    color: black;
     font-size: 1em;
+    padding-right: 0;
   }
 
   .is-two-fifths {
@@ -246,7 +256,7 @@ input {
   .callout {
     font-size: 16px;
     margin-top: .75em;
-    margin-bottom: 1.9em;
+    margin-bottom: 1em;
   }
 
 }
