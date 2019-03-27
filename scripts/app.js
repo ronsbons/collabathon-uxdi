@@ -8,7 +8,7 @@ $(document).ready(function() {
     $('.navbar-menu').toggleClass('is-active');
   });
 
-  // Testing modal open when form submits
+  // Opens modal containing success/error response when form submits
   $('#mc-embedded-subscribe-form').on('submit', function(event) {
     $('.modal').toggleClass('is-active');
   });
