@@ -21,19 +21,18 @@
   <header role="banner">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <div class="navbar-start">
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-          </a>
-        </div>
+        <!-- Company Name -->
+        <a class="navbar-item caps company-title" href="#">Earicle</a>
+
+        <!-- Hamburger icon for responsive nav -->
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
   
       <div class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item caps" href="#">Earicle</a>
-        </div>
         <div class="navbar-end">
           <a class="navbar-item caps">About</a>
           <a class="navbar-item caps">Product</a>
@@ -42,57 +41,63 @@
         </div>
       </div>
     </nav>
-    <h1 class="caps"> Earicle </h1>
+    <h1>What they think, you hear.</h1>
   </header>
 
   <section role="main">
-    <div class="wrapper">
-      <p>Earicle is a new assisted hearing device that is going to change your life! Look your conversation partner in the eye while wearing one Earicle to hear what they are REALLY thinking.</p>
+    <div class="columns">
+      <div class="landing-text column is-three-fifths">
+        <p>Earicle is a new assisted hearing device that is going to change your life! Look your conversation partner in the eye while wearing one Earicle to hear what they are REALLY thinking.</p>
+      </div>
 
-      <h2 class="callout caps">be the first to receive our trending newsletter</h2>
+      <div class="landing-text column is-two-fifths">
+        <h2 class="callout caps">be the first to receive our trending newsletter</h2>
 
-      <p>We promise we won’t spam you. Your privacy is 100% gauranteed. We’ll never share your personal information.</p>
-    </div>
+        <p>We promise we won’t spam you. Your privacy is 100% gauranteed. We’ll never share your personal information.</p>
 
-    <!-- Begin Mailchimp Signup Form -->
-    <div id="mc_embed_signup">
-      <form action="https://gmail.us20.list-manage.com/subscribe/post?u=978d82adcc8eb44c298ff9595&amp;id=3510d9c78f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <!-- First Name input -->
-          <div class="mc-field-group">
-            <input type="text" minlength="2" pattern="[a-zA-Z]+" title="Please only use letters" value="" name="FNAME" class="required" id="mce-FNAME" placeholder="First Name">
-          </div>
-  
-          <!-- Last Name input -->
-          <div class="mc-field-group">
-            <input type="text" minlength="2" pattern="[a-zA-Z]+" title="Please only use letters" value="" name="LNAME" class="required" id="mce-LNAME" placeholder="Last Name">
-          </div>
-            
-          <!-- Email input -->
-          <div class="mc-field-group">
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
-          </div>
-  
-          <!-- Testing putting responses in a modal -->
-          <div class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-              <!-- Responses from MailChimp -->
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->  
-            </div>  <!-- end of .modal-content div -->
-            <button class="modal-close is-large" aria-label="close"></button>
-          </div>  <!-- end of .modal div -->
-  
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_978d82adcc8eb44c298ff9595_3510d9c78f" tabindex="-1" value=""></div>
-  
-          <!-- Submit button -->
-          <div class="clear"><input type="submit" value="SIGN UP NOW" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </div>
-      </form>
-    </div>
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="https://gmail.us20.list-manage.com/subscribe/post?u=978d82adcc8eb44c298ff9595&amp;id=3510d9c78f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <!-- First Name input -->
+              <div class="mc-field-group">
+                <input type="text" minlength="2" pattern="[a-zA-Z]+" title="Please only use letters" value="" name="FNAME" class="required" id="mce-FNAME" placeholder="First Name">
+              </div>
+      
+              <!-- Last Name input -->
+              <div class="mc-field-group">
+                <input type="text" minlength="2" pattern="[a-zA-Z]+" title="Please only use letters" value="" name="LNAME" class="required" id="mce-LNAME" placeholder="Last Name">
+              </div>
+                
+              <!-- Email input -->
+              <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+              </div>
+      
+              <!-- Testing putting responses in a modal -->
+              <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                  <!-- Responses from MailChimp -->
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->  
+                </div>  <!-- end of .modal-content div -->
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>  <!-- end of .modal div -->
+      
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_978d82adcc8eb44c298ff9595_3510d9c78f" tabindex="-1" value=""></div>
+      
+              <!-- Submit button -->
+              <div class="clear">
+                <input type="submit" value="SIGN UP NOW" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </div>
+            </div>
+          </form>
+        </div>  <!-- end of mc_embed_signup div -->
+      </div>  <!-- end of column div -->
+    </div>  <!-- end of columns div -->
   </section>
 
   <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>

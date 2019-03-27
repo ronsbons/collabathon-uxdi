@@ -2,32 +2,57 @@ body {
   font-size: 14px;
 }
 
+/* Header and Nav styles */
 header {
-  background-image: url("images/earicles.png"); /* The image used */
+  background-image: url("images/earicles-web.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  height: 450px; /* You must set a specified height */
+  height: 60vh; /* You must set a specified height */
   position: relative;
 }
 
 .navbar {
   background-color: transparent;
+  padding: .8em;
+}
+
+.company-title {
+  color: white;
+  font-size: 2em;
+}
+
+.navbar-burger {
+  background-color: purple;
+  color: white;
+}
+
+.navbar-end {
+  align-items: center;
+}
+
+.navbar-item {
+  height: 2em;
 }
 
 .sign-up-nav {
+  background-color: purple;
   border: 1px solid gray;
   border-radius: 8px;
+  color: white;
 }
 
 h1 {
   /* bottom, left, right, top refer to parent element (header) which has position relative corresponding with this element's absolute position */
-  color: black;
+  bottom: 3%;
+  color: white;
+  font-size: 2em;
   left: 0;
   position: absolute; 
   right: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .caps {
@@ -36,66 +61,100 @@ h1 {
 }
 
 
+/* Main Section styles */
+.columns {
+  margin: 0px;
+  padding: 4em;
+}
+
+.is-two-fifths {
+  text-align: center;
+}
+
+#mc_embed_signup {
+  margin: 1.9em 0;
+}
+
+.mc-field-group {
+  margin: 1.5em 0;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 1em;
+  width: 100%;
+}
+
+/* Style field error messages */
+#mc_embed_signup div.mce_inline_error {
+  background-color: blue !important;
+}
+
+/* changes transparency of modal background */
+.modal-background {
+  background-color: rgba(10,10,10,.65);
+}
+
+#mce-responses {
+  background-color: white;
+  border-radius: 6px;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 8vw;
+  padding: 7em 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-close {
+  background-color: black;
+  border-radius: 50px;
+}
+
+/* Submit form button */
+#mc-embedded-subscribe {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* Media query for mobile */
 @media only screen and (max-width: 375px) {
   header {
+    background-image: url("images/earicles-mobile.jpg"); /* The image used */
     height: 30vh;
   }
 
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar-brand {
+    align-items: center;
+  }
+
+  .company-title {
+    font-size: 14px;
+  }
+
   h1 {
-    bottom: 3%;
     font-size: 1.5em;
   }
 
   section {
     padding: 6vw;
   }
-  
-  .wrapper {
+
+  .landing-text {
     line-height: 1.2em;
     text-align: center;
   }
 
   .callout {
-    margin: 1.9em 0;
+    margin-top: .75em;
+    margin-bottom: 1.9em;
   }
-
-  #mc_embed_signup {
-    margin: 1.9em 0;
-  }
-
-  .mc-field-group {
-    margin: 1.5em 0;
-  }
-
-  input {
-    border: none;
-    border-bottom: 1px solid gray;
-    font-size: 1em;
-    width: 100%;
-  }
-
-  /* changes transparency of modal background */
-  .modal-background {
-    background-color: rgba(10,10,10,.65);
-  }
-
-  #mce-responses {
-    background-color: white;
-    border-radius: 6px;
-    font-size: 1.3em;
-    font-weight: bold;
-    margin: 8vw;
-    padding: 7em 1em;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .modal-close {
-    background-color: black;
-    border-radius: 50px;
-  }
-
-  #mc-embedded-subscribe {
-    font-weight: bold;
-  }
+  
 }
