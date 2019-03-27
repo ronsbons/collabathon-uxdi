@@ -38,7 +38,6 @@ header {
 
 .sign-up-nav {
   background-color: purple;
-  border: 1px solid gray;
   border-radius: 8px;
   color: white;
 }
@@ -64,11 +63,30 @@ h1 {
 /* Main Section styles */
 .columns {
   margin: 0px;
-  padding: 4em;
+  padding: 3em;
+}
+
+.column {
+  padding: 2em;
+}
+
+.is-three-fifths {
+  border-right: 1px solid gray;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.inline-company {
+  color: purple;
+  font-size: 1.5em;
 }
 
 .is-two-fifths {
   text-align: center;
+}
+
+.callout {
+  margin-bottom: 1.2em;
 }
 
 #mc_embed_signup {
@@ -122,6 +140,7 @@ input {
 
 /* Media query for mobile */
 @media only screen and (max-width: 375px) {
+  /* Header and Nav styles */
   header {
     background-image: url("images/earicles-mobile.jpg"); /* The image used */
     height: 30vh;
@@ -139,17 +158,44 @@ input {
     font-size: 14px;
   }
 
+  .sign-up-nav {
+    background-color: white;
+    border: none;
+    color: black;
+  }
+  
   h1 {
     font-size: 1.5em;
   }
 
+  /* Main Section styles */
   section {
     padding: 6vw;
+  }
+
+  .columns {
+    margin: -.8em;
+    padding: 0;
   }
 
   .landing-text {
     line-height: 1.2em;
     text-align: center;
+  }
+
+  .is-three-fifths {
+    border-right: none;
+    font-size: 1em;
+    font-weight: normal;
+  }
+
+  .inline-company {
+    color: #4a4a4a;
+    font-size: 1em;
+  }
+
+  .is-two-fifths {
+    padding-top: 0px;
   }
 
   .callout {
