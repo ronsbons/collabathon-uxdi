@@ -40,7 +40,7 @@ header {
 }
 
 .navbar-burger {
-  background-color: purple;
+  background-color: none;
   color: white;
 }
 
@@ -53,7 +53,7 @@ header {
 }
 
 .sign-up-nav {
-  background-color: purple;
+  background-color: #78589A;
   border: 1px solid gray;
   border-radius: 8px;
   color: white;
@@ -138,6 +138,12 @@ input {
 
 /* Media query for mobile */
 @media only screen and (max-width: 375px) {
+
+    .columns {
+        margin: 0px;
+        padding: 0em;
+      }
+      
   header {
     background-image: url("images/earicles-mobile.jpg"); /* The image used */
     height: 30vh;
@@ -184,7 +190,7 @@ x
 }
 
 .response #mce-success-response {
-    color: purple !important;
+    color: greenyellow !important;
 }
 
 .button {
