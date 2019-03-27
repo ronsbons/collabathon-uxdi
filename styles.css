@@ -3,6 +3,13 @@
     font-family: 'Lato', sans-serif;
 }
 
+.navbar-item:hover {
+    background: transparent !important;
+    color: yellow !important;
+    border: #78589A !important;
+    font-size: 16px;
+}
+
 body {
   font-size: 14px;
 }
@@ -143,7 +150,7 @@ input {
         margin: 0px;
         padding: 0em;
       }
-      
+
   header {
     background-image: url("images/earicles-mobile.jpg"); /* The image used */
     height: 30vh;
@@ -208,10 +215,27 @@ x
 #mc_embed_signup div.mce_inline_error {
     background: white !important;
     color: red !important;
+    border-top: 2px red solid !important;
+    text-align: left;
 }
-
 
 .info {
     font-size: 16px;
-
 }
+
+#mce-responses, .modal-background, .modal-content {
+}
+
+
+#mce-responses{
+    position: relative;
+}
+
+
+.is-large.delete, .is-large.modal-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
