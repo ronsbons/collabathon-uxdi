@@ -3,9 +3,21 @@
   font-family: 'Lato', sans-serif;
 }
 
+.company-title:hover {
+    font-size: 2.1em !important;
+    color:white !important;
+
+}
+
+.navbar-item:hover {
+    background: transparent !important;
+    border-bottom: 1px solid #78589A !important;
+    font-size: 16px;
+}
+
 body {
   color: black;
-  font-size: 14px;
+  font-size: 14px; 
 }
 
 
@@ -323,4 +335,11 @@ input {
   #mce-success-response{
     font-size: 1.5em;
   }
+}
+
+
+@media only screen and (min-width: 1500px) {
+    header {
+        height: 60vh; /* You must set a specified height */
+      }
 }
