@@ -19,4 +19,13 @@ $(document).ready(function() {
     event.preventDefault();
     $('.modal').toggleClass('is-active');
   });
+  
+  // Trying to change background color of sign-up nav link dynamically
+  // if ( $('.navbar-menu').hasClass('is-active') ) {
+  //   $('.sign-up-nav').css({
+  //     'background-color': 'white',
+  //     'border': 'none',
+  //     'color': '#4a4a4a'
+  //   });
+  // }
 });
