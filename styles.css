@@ -1,10 +1,21 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
 body {
+  color: black;
   font-size: 14px;
 }
 
+
 /* Header and Nav styles */
 header {
-  background-image: url("images/earicles-web.jpg"); /* The image used */
+  background-image:  
+  linear-gradient(
+    rgba(120, 88, 154, 0.45), 
+    rgba(120, 88, 154, 0.45)
+  ),
+  url("images/earicles2.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -24,7 +35,7 @@ header {
 }
 
 .navbar-burger {
-  background-color: purple;
+  background-color: none;
   color: white;
 }
 
@@ -37,7 +48,7 @@ header {
 }
 
 .sign-up-nav {
-  background-color: purple;
+  background-color: #78589A;
   border-radius: 8px;
   color: white;
 }
@@ -46,11 +57,18 @@ h1 {
   /* bottom, left, right, top refer to parent element (header) which has position relative corresponding with this element's absolute position */
   bottom: 3%;
   color: white;
-  font-size: 2em;
+  font-size: 16px;
+  font-weight: 300;
   left: 0;
   position: absolute; 
   right: 0;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.header {
+  font-size: 2em;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -86,6 +104,7 @@ h1 {
 }
 
 .callout {
+  color: #78589A;
   margin-bottom: 1.2em;
 }
 
@@ -104,9 +123,22 @@ input {
   width: 100%;
 }
 
+
+/* Form styles */
+.label {
+  color: #C1C1C1;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+#mc_embed_signup {
+  font-family: 'Lato', sans-serif !important;
+}
+
 /* Style field error messages */
 #mc_embed_signup div.mce_inline_error {
-  background-color: blue !important;
+  background: white !important;
+  color: red !important;
 }
 
 /* changes transparency of modal background */
@@ -125,6 +157,10 @@ input {
   text-transform: uppercase;
 }
 
+.response #mce-success-response {
+  color: greenyellow !important;
+}
+
 .modal-close {
   background-color: black;
   border-radius: 50px;
@@ -135,6 +171,11 @@ input {
   background-color: purple;
   color: white;
   font-weight: bold;
+}
+
+.button {
+  background: #78589A !important;
+  color: white;
 }
 
 
@@ -152,6 +193,10 @@ input {
 
   .navbar-brand {
     align-items: center;
+  }
+
+  .header {
+    font-size: 1em;
   }
 
   .company-title {
@@ -199,8 +244,9 @@ input {
   }
 
   .callout {
+    font-size: 16px;
     margin-top: .75em;
     margin-bottom: 1.9em;
   }
-  
+
 }
