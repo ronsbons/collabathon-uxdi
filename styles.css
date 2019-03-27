@@ -201,6 +201,23 @@ input {
   color: white;
 }
 
+@media only screen and (min-width: 1400px) {
+  header {
+    height: 80vh;
+  }
+
+  .is-three-fifths {
+    font-size: 26px;
+  }
+
+  .inline-company {
+    font-size: 32px;
+  }
+
+  .is-two-fifths {
+    font-size: 18px;
+  }
+}
 
 @media only screen and (max-width: 1087px) {
   .navbar-menu {
