@@ -1,49 +1,76 @@
+body {
+  font-size: 14px;
+}
+
+header {
+  background-image: url("images/earicles.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 450px; /* You must set a specified height */
+  position: relative;
+}
+
+h1 {
+  /* bottom, left, right, top refer to parent element (header) which has position relative corresponding with this element's absolute position */
+  color: black;
+  font-weight: bold;
+  left: 0;
+  position: absolute; 
+  right: 0;
+  text-align: center;
+}
+
 .caps {
   text-transform: uppercase;
 }
 
 
 @media only screen and (max-width: 375px) {
-  h2,
-  .center,
-  #mc-embedded-subscribe {
+  header {
+    height: 30vh;
+  }
+
+  h1 {
+    bottom: 3%;
+    font-size: 1.5em;
+  }
+
+  section {
+    padding: 6vw;
+  }
+  
+  .wrapper {
+    line-height: 1.2em;
     text-align: center;
+  }
+
+  .callout {
+    font-weight: bold;
+    margin: 1.9em 0;
+  }
+
+  #mc_embed_signup {
+    margin: 1.9em 0;
+  }
+
+  .mc-field-group {
+    margin: 1.5em 0;
   }
 
   input {
     border: none;
     border-bottom: 1px solid gray;
+    font-size: 1em;
+    width: 100%;
+  }
+
+  #mce-responses {
+    background-color: red;
+  }
+
+  #mc-embedded-subscribe {
+    font-weight: bold;
   }
 }
-
-header {
-    background-image: url("images/earicles.png"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 450px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-
-}
-
-header h1 {
-    display: flex;
-    justify-content: center;
-    color: white;
-    align-items: flex-end;
-}
-
-
-@media only screen and (max-width: 600px) {
-    header {
-        height: 250px;
-    }
-  }
-
-  h2 {
-    text-transform: uppercase;
-  }
-
-  .wrapper {
-      text-align: center;
-  }
