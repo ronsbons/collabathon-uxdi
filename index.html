@@ -18,31 +18,30 @@
 
 </head>
 <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <div class="navbar-start">
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-      </div>
-    </div>
-
-    <div class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item caps" href="#">Earicle</a>
-      </div>
-      <div class="navbar-end">
-        <a class="navbar-item caps">About</a>
-        <a class="navbar-item caps">Product</a>
-        <a class="navbar-item caps">Contact</a>
-        <a class="navbar-item button is-light caps">Sign Up</a>
-      </div>
-    </div>
-  </nav>
-
   <header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <div class="navbar-start">
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+  
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item caps" href="#">Earicle</a>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item caps">About</a>
+          <a class="navbar-item caps">Product</a>
+          <a class="navbar-item caps">Contact</a>
+          <a class="navbar-item caps sign-up-nav">Sign Up</a>
+        </div>
+      </div>
+    </nav>
     <h1 class="caps"> Earicle </h1>
   </header>
 
@@ -74,11 +73,18 @@
             <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
           </div>
   
-  
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <!-- Testing putting responses in a modal -->
+          <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <!-- Responses from MailChimp -->
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->  
+            </div>  <!-- end of .modal-content div -->
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>  <!-- end of .modal div -->
   
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_978d82adcc8eb44c298ff9595_3510d9c78f" tabindex="-1" value=""></div>
   

@@ -12,10 +12,18 @@ header {
   position: relative;
 }
 
+.navbar {
+  background-color: transparent;
+}
+
+.sign-up-nav {
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
 h1 {
   /* bottom, left, right, top refer to parent element (header) which has position relative corresponding with this element's absolute position */
   color: black;
-  font-weight: bold;
   left: 0;
   position: absolute; 
   right: 0;
@@ -23,6 +31,7 @@ h1 {
 }
 
 .caps {
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -47,7 +56,6 @@ h1 {
   }
 
   .callout {
-    font-weight: bold;
     margin: 1.9em 0;
   }
 
@@ -66,8 +74,25 @@ h1 {
     width: 100%;
   }
 
+  /* changes transparency of modal background */
+  .modal-background {
+    background-color: rgba(10,10,10,.65);
+  }
+
   #mce-responses {
-    background-color: red;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 8vw;
+    padding: 7em 1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .modal-close {
+    background-color: black;
+    border-radius: 50px;
   }
 
   #mc-embedded-subscribe {
