@@ -1,9 +1,25 @@
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 body {
   font-size: 14px;
 }
+/* 
+.hero {
+    background: rgba(10,10,10,.1);
+    opacity: .1;
+} */
 
 header {
-  background-image: url("images/earicles.png"); /* The image used */
+
+  background-image:  
+  linear-gradient(
+    rgba(120, 88, 154, 0.45), 
+    rgba(120, 88, 154, 0.45)
+  ),
+  url("images/earicles2.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -99,3 +115,36 @@ h1 {
     font-weight: bold;
   }
 }
+
+.callout {
+    font-size: 16px;
+    color: #78589A
+}
+
+.response #mce-success-response {
+    color: purple !important;
+}
+
+.button {
+    background: #78589A !important;
+    color: white;
+}
+
+.header {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 10;
+    font-size: 16px;
+}
+
+#mc_embed_signup div.mce_inline_error {
+    background: white !important;
+    color: red !important;
+}
+
+
+.info {
+    font-size: 16px;
+
+}
+

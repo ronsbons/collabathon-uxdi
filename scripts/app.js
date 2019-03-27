@@ -2,6 +2,7 @@ $(document).ready(function() {
   console.log('js file loaded');
   console.log('jQuery working');
 
+  //hamburger nav-bar functionality!
   $('.navbar-burger').on('click', function(event) {
     event.preventDefault();
     $('.navbar-burger').toggleClass('is-active');
