@@ -1,33 +1,28 @@
-
+/* Global styles */
 * {
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .navbar-item:hover {
     background: transparent !important;
-    color: yellow !important;
     border: #78589A !important;
     font-size: 16px;
 }
 
 body {
-  font-size: 14px;
+  color: black;
+  font-size: 14px; 
 }
-/* 
-.hero {
-    background: rgba(10,10,10,.1);
-    opacity: .1;
-} */
+
 
 /* Header and Nav styles */
 header {
-
   background-image:  
-  linear-gradient(
-    rgba(120, 88, 154, 0.45), 
-    rgba(120, 88, 154, 0.45)
-  ),
-  url("images/earicles2.jpg"); /* The image used */
+    linear-gradient(
+      rgba(120, 88, 154, 0.45), 
+      rgba(120, 88, 154, 0.45)
+    ),
+    url("images/earicles-web.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -61,20 +56,26 @@ header {
 
 .sign-up-nav {
   background-color: #78589A;
-  border: 1px solid gray;
   border-radius: 8px;
   color: white;
 }
 
 h1 {
   /* bottom, left, right, top refer to parent element (header) which has position relative corresponding with this element's absolute position */
-  bottom: 3%;
+  bottom: 6%;
   color: white;
-  font-size: 2em;
+  font-size: 16px;
+  font-weight: 300;
   left: 0;
   position: absolute; 
   right: 0;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.header {
+  font-size: 2em;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -90,8 +91,31 @@ h1 {
   padding: 4em;
 }
 
+.column {
+  padding: 2.7em;
+}
+
+.is-three-fifths {
+  border-right: 1px solid gray;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  padding-top: 1.2em;
+}
+
+.inline-company {
+  color: #78589A;
+  font-size: 26px;
+  padding-right: .2em;
+}
+
 .is-two-fifths {
+  padding-top: 1.7em;
   text-align: center;
+}
+
+.callout {
+  color: #78589A;
+  margin-bottom: 1.2em;
 }
 
 #mc_embed_signup {
@@ -109,9 +133,22 @@ input {
   width: 100%;
 }
 
+
+/* Form styles */
+.label {
+  color: #C1C1C1;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+#mc_embed_signup {
+  font-family: 'Lato', sans-serif !important;
+}
+
 /* Style field error messages */
 #mc_embed_signup div.mce_inline_error {
-  background-color: blue !important;
+  background: white !important;
+  color: red !important;
 }
 
 /* changes transparency of modal background */
@@ -130,6 +167,10 @@ input {
   text-transform: uppercase;
 }
 
+.response #mce-success-response {
+  color: greenyellow !important;
+}
+
 .modal-close {
   background-color: black;
   border-radius: 50px;
@@ -142,17 +183,34 @@ input {
   font-weight: bold;
 }
 
+.button {
+  background: #78589A !important;
+  color: white;
+}
+
+
+/* Media query for tablet */
+@media only screen and (max-width: 768px) {
+  header {
+    height: 50vh;
+  }
+
+  .is-three-fifths {
+    border: none;
+  }
+}
+
 
 /* Media query for mobile */
-@media only screen and (max-width: 375px) {
-
-    .columns {
-        margin: 0px;
-        padding: 0em;
-      }
-
+@media only screen and (max-width: 425px) {
+  /* Header and Nav styles */
   header {
-    background-image: url("images/earicles-mobile.jpg"); /* The image used */
+    background-image: 
+      linear-gradient(
+        rgba(120, 88, 154, 0.45), 
+        rgba(120, 88, 154, 0.45)
+      ),
+      url("images/earicles-mobile.jpg"); /* The image used */
     height: 30vh;
   }
 
@@ -164,16 +222,32 @@ input {
     align-items: center;
   }
 
+  .header {
+    font-size: 1em;
+  }
+
   .company-title {
     font-size: 14px;
   }
 
+  .sign-up-nav {
+    background-color: white;
+    border: none;
+    color: black;
+  }
+  
   h1 {
     font-size: 1.5em;
   }
 
+  /* Main Section styles */
   section {
     padding: 6vw;
+  }
+
+  .columns {
+    margin: -.8em;
+    padding: 0;
   }
 
   .landing-text {
@@ -181,61 +255,26 @@ input {
     text-align: center;
   }
 
-  .callout {
-    margin-top: .75em;
-    margin-bottom: 1.9em;
+  .is-three-fifths {
+    border-right: none;
+    font-size: 1em;
+    font-weight: normal;
+    padding-bottom: 25px;
   }
 
+  .inline-company {
+    color: black;
+    font-size: 1em;
+    padding-right: 0;
+  }
 
-}
-x
+  .is-two-fifths {
+    padding-top: 0px;
+  }
 
-
-.callout {
+  .callout {
     font-size: 16px;
-    color: #78589A
-}
-
-.response #mce-success-response {
-    color: greenyellow !important;
-}
-
-.button {
-    background: #78589A !important;
-    color: white;
-}
-
-.header {
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-weight: 10;
-    font-size: 16px;
-}
-
-#mc_embed_signup div.mce_inline_error {
-    background: white !important;
-    color: red !important;
-    border-top: 2px red solid !important;
-    text-align: left;
-}
-
-.info {
-    font-size: 16px;
-}
-
-#mce-responses, .modal-background, .modal-content {
-}
-
-
-#mce-responses{
-    position: relative;
-}
-
-
-.is-large.delete, .is-large.modal-close {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-}
-
+    margin-top: .75em;
+    margin-bottom: 1em;
+  }
 
