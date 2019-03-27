@@ -16,3 +16,34 @@
   }
 }
 
+header {
+    background-image: url("images/earicles.png"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 450px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: flex-end;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 250px;
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  .wrapper {
+      text-align: center;
+  }
