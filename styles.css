@@ -21,7 +21,7 @@ header {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  height: 60vh; /* You must set a specified height */
+  height: 50vh; /* You must set a specified height */
   position: relative;
 }
 
@@ -46,6 +46,14 @@ header {
 
 .navbar-item {
   height: 2em;
+  transition: .2s ease-out;
+}
+
+a.navbar-item:hover {
+  background-color: transparent;
+  border: 1px solid #78589A;
+  color: #4a4a4a;
+  font-size: 1.2em;
 }
 
 .sign-up-nav {
@@ -157,17 +165,23 @@ input {
   font-weight: bold;
   margin: 8vw;
   padding: 7em 1em;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
 }
 
-.response #mce-success-response {
-  color: greenyellow !important;
+#mce-success-response{
+  color: #78589A;
+  display: block;
+  font-size: 2.5em;
 }
 
 .modal-close {
-  background-color: black;
+  background-color: #78589A;
   border-radius: 50px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }
 
 /* Submit form button */
@@ -191,6 +205,12 @@ input {
 
   .is-three-fifths {
     border: none;
+  }
+
+  .sign-up-nav {
+    background-color: white;
+    border: none;
+    color: #4a4a4a;
   }
 }
 
@@ -222,12 +242,6 @@ input {
 
   .company-title {
     font-size: 14px;
-  }
-
-  .sign-up-nav {
-    background-color: white;
-    border: none;
-    color: black;
   }
   
   h1 {
@@ -272,4 +286,7 @@ input {
     margin-bottom: 1em;
   }
 
+  #mce-success-response{
+    font-size: 1.5em;
+  }
 }
